@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Whan.</strong>
+                        <p>
+                            These days, I know we haven't talked much. Honestly, I want to talk a lot and see you so much. But when I hear your voice, I end up not knowing what to say, so I have to express it through writing instead. 
+                            You've been spending a lot of time with your friends and yourself lately, and you seem happy. That makes me happy too. 
+                            Live your life to the fullest. When you're happy, you don't need to think of me, but if you ever feel sad, I'll always be there for you. 
+                            You can tell me anything and call me anytime, and I'll come to you as quickly as I can.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
